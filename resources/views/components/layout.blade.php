@@ -7,11 +7,13 @@
     <title>Home</title>
 </head>
 <body>
-        <nav class="navbar">
-            <a href="" class="navbar-link">Link 1</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="" class="navbar-link active">Link 1</a>
             <a href="" class="navbar-link">Link 2</a>
             <a href="" class="navbar-link">Link 4</a>
-        </nav>
+        </div>
+    </nav>
     {{ $slot }}
 </body>
 </html>

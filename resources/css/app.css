@@ -2,13 +2,16 @@
     --red: red;
     --dark: #222;
     --dark2: #333;
-    --accent: purple;
-    --accent2: rgb(102, 3, 102);
+    --accent: rgb(102, 3, 102);
+    --accent2: purple;
 }
 
 * {
     box-sizing: border-box;
 }
+button { cursor: pointer;}
+img { display: block; max-width: 100%;}
+.container { max-width: 1200px; width: 80%; margin: auto;}
 
 body {
     background: var(--dark);
