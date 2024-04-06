@@ -1,3 +1,4 @@
+@section('title', 'Property')
 <x-layout>
     <h1>Propiedad {{ $property->id }}</h1>
     <main>

@@ -1,3 +1,4 @@
+@section('title', 'Properties')
 <x-layout>
     <h1>Properties</h1>
     <main>

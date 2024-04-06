@@ -1,3 +1,4 @@
+@section('title', 'Contact')
 <x-layout>
     <h1>Contact</h1>
     <main>
