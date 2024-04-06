@@ -51,3 +51,27 @@ h1 {
 .navbar .navbar-link.active {
     background: var(--accent2);
 }
+
+.dark-table {
+    width: 100%;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: center;
+}
+.dark-table table {
+    border: 1px solid #222; /* Borde de la tabla más oscuro */
+    width: 100%rem;
+    /* max-width: 90%; */
+}
+
+.dark-table th {
+    border: 1px solid #222; /* Borde de las celdas de encabezado más oscuro */
+    background-color: #333; /* Color de fondo más oscuro para el encabezado */
+    color: #fff; /* Color de texto blanco para el encabezado */
+}
+
+.dark-table td {
+    border: 1px solid #222; /* Borde de las celdas de datos más oscuro */
+    background-color: #333; /* Color de fondo más oscuro para las celdas de datos */
+    color: #fff; /* Color de texto blanco para las celdas de datos */
+}
