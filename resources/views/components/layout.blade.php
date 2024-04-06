@@ -7,13 +7,12 @@
     <title>Home</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="" class="navbar-link active">Link 1</a>
-            <a href="" class="navbar-link">Link 2</a>
-            <a href="" class="navbar-link">Link 4</a>
-        </div>
-    </nav>
+        <nav class="navbar">
+            <a href="{{ route('home') }}" class="navbar-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
+            <a href="{{ route('about') }}" class="navbar-link {{ request()->routeIs('about') ? 'active' : '' }}">About</a>
+            <a href="{{ route('properties') }}" class="navbar-link {{ request()->routeIs('properties') ? 'active' : '' }}">Properties</a>
+            <a href="{{ route('contact') }}" class="navbar-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
+        </nav>
     {{ $slot }}
 </body>
 </html>
