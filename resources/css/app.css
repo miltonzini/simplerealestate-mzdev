@@ -9,7 +9,22 @@
 * {
     box-sizing: border-box;
 }
-button { cursor: pointer;}
+button, .button {
+    cursor: pointer;
+    text-wrap: nowrap;
+    margin: 0 0.15rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    background: var(--accent);
+}
+
+button:hover, .button:hover {
+    background: var(--accent2);
+}
+
+
+
+
 img { display: block; max-width: 100%;}
 .container { max-width: 1200px; width: 80%; margin: auto;}
 
@@ -51,6 +66,17 @@ h1 {
 .navbar .navbar-link.active {
     background: var(--accent2);
 }
+
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 100%; 
+    margin-bottom: 1rem; 
+}
+.table-container table {
+    width: 100%; 
+    white-space: nowrap; 
+}
+
 
 .dark-table {
     width: 100%;

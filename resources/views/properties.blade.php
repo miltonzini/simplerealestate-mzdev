@@ -2,7 +2,7 @@
 <x-layout>
     <h1>Properties</h1>
     <main>
-        <div class="dark-table" role="region" tabindex="0">
+        <div class="table-wrapper dark-table" role="region" tabindex="0">
             <table>
                 <caption>Listado de Propiedades</caption>
                 <thead>
@@ -32,7 +32,7 @@
                         <td>{{ $property->status }}</td>
                         <td>{{ $property->created_at }}</td>
                         <td>{{ $property->updated_at }}</td>
-                        <td><a href="{{ env('BASE_URL') }}/properties/{{ $property->id }}">Ver detalles</a></td>
+                        <td><a href="{{ env('BASE_URL') }}/properties/{{ $property->id }}" class="button">Ver detalles</a></td>
 
                     </tr>
                 @endforeach
