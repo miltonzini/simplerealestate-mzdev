@@ -8,24 +8,18 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+Route::view('/about', 'about')->name('about');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::view('/contact', 'contact')->name('contact');
 
 Route::get('/properties', [PropertiesController::class, 'index'])->name('properties');
 
 Route::get('/properties/{id}', [PropertyController::class, 'show'])->name('property');
 
 
-// test routes
 
-// Route::get('/test', function(){
-//     return "test";
-// })->name('test');
+
+// TEST ROUTES
 
 Route::get('/test/{string?}', function($string = 'default string'){
     return "String: '" . $string . "'";
