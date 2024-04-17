@@ -9,10 +9,10 @@
 <body>
         <nav class="navbar">
             <div class="first-block ">
-                <a href="{{ route('home') }}" class="navbar-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
-                <a href="{{ route('about') }}" class="navbar-link {{ request()->routeIs('about') ? 'active' : '' }}">About</a>
-                <a href="{{ route('properties') }}" class="navbar-link {{ request()->routeIs('properties') ? 'active' : '' }}">Properties</a>
-                <a href="{{ route('contact') }}" class="navbar-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
+                <a href="{{ route('home') }}" class="button navbar-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
+                <a href="{{ route('about') }}" class="button navbar-link {{ request()->routeIs('about') ? 'active' : '' }}">About</a>
+                <a href="{{ route('properties') }}" class="button navbar-link {{ request()->routeIs('properties') ? 'active' : '' }}">Properties</a>
+                <a href="{{ route('contact') }}" class="button navbar-link {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
             </div>
             <div class="second-block">
                 <!-- <a href="{{ route('home') }}" class="navbar-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a> -->

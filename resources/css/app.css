@@ -20,7 +20,7 @@ button, .button {
     cursor: pointer;
     text-wrap: nowrap;
     margin: 0.25 0.15rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 1rem;
     border-radius: 1rem;
     background: var(--accent);
     font-size: inherit;
@@ -28,6 +28,7 @@ button, .button {
 }
 .button-sm {
     font-size: 0.8rem;
+    padding: 0.25rem 1rem;
 }
 button:hover, .button:hover {
     background: var(--accent2);
@@ -69,9 +70,8 @@ p, a {
 }
 
 .navbar .navbar-link {
+    background: unset;
     margin: 0 0.15rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
 }
 
 .navbar .navbar-link:hover {
@@ -80,6 +80,7 @@ p, a {
 
 .navbar .navbar-link.active {
     background: var(--accent2);
+    font-weight: bold;
 }
 .navbar .login-button {
     background: var(--gray);
@@ -89,6 +90,10 @@ p, a {
     background: var(--accent);
 }
 
+
+td, th {
+    padding: 0.75rem;
+}
 .table-wrapper {
     overflow-x: auto;
     max-width: 100%; 
@@ -99,10 +104,7 @@ p, a {
     white-space: nowrap; 
 }
 table .buttons-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 0.25rem;
-    row-gap: 0.25rem;
+    /*   ...   */
 }
 
 .dark-table {
@@ -128,6 +130,7 @@ table .buttons-wrapper {
     background-color: #333; /* Color de fondo más oscuro para las celdas de datos */
     color: #fff; /* Color de texto blanco para las celdas de datos */
 }
+
 
 /* SrollBar */
 
