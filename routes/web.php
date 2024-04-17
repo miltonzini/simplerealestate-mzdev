@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\PropertiesController;
+use App\Http\Controllers\AdminPropertiesController;
 
 Route::get('/', function () {
     return view('home');
@@ -17,7 +18,11 @@ Route::get('/properties', [PropertiesController::class, 'index'])->name('propert
 Route::get('/properties/{id}', [PropertyController::class, 'show'])->name('property');
 
 
+// ADMIN ROUTES
 
+Route::view('/admin', 'admin.dashboard')->name('dashboard');
+Route::view('/admin/login', 'admin.login')->name('login');
+Route::get('/admin/properties', [AdminPropertiesController::class, 'index'])->name('admin-properties');
 
 // TEST ROUTES
 

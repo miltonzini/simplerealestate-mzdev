@@ -4,7 +4,8 @@
     <main>
         <div class="table-wrapper dark-table" role="region" tabindex="0">
             <table>
-                <caption>Listado de Propiedades</caption>
+                <caption>Listado de Propiedades (Para Administrador)</caption>
+                <br>
                 <thead>
                     <tr>
                         <th>id</th>
@@ -15,9 +16,13 @@
                         <th>price</th>
                         <th>type</th>
                         <th>status</th>
+                        <th>created_at</th>
+                        <th>updated_at</th>
                     </tr>
                 </thead>
                 <tbody>
+                    
+
                 @foreach($properties as $property)
                     <tr>
                         <td>{{ $property->id }}</td>
@@ -28,6 +33,8 @@
                         <td>{{ $property->price }}</td>
                         <td>{{ $property->type }}</td>
                         <td>{{ $property->status }}</td>
+                        <td>{{ $property->created_at }}</td>
+                        <td>{{ $property->updated_at }}</td>
                         <td><a href="{{ env('BASE_URL') }}/properties/{{ $property->id }}" class="button">Ver detalles</a></td>
 
                     </tr>
