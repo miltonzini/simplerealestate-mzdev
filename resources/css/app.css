@@ -21,9 +21,10 @@ button, .button {
     text-wrap: nowrap;
     margin: 0.25 0.15rem;
     padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     background: var(--accent);
     font-size: inherit;
+    text-align: center;
 }
 .button-sm {
     font-size: 0.8rem;
@@ -96,6 +97,12 @@ p, a {
 .table-container table {
     width: 100%; 
     white-space: nowrap; 
+}
+table .buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    row-gap: 0.25rem;
 }
 
 .dark-table {

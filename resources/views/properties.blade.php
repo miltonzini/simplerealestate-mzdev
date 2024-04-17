@@ -9,7 +9,7 @@
                     <tr>
                         <th>id</th>
                         <th>title</th>
-                        <th>description</th>
+                        {{--<th>description</th>--}}
                         <th>address</th>
                         <th>city</th>
                         <th>price</th>
@@ -22,7 +22,7 @@
                     <tr>
                         <td>{{ $property->id }}</td>
                         <td>{{ $property->title }}</td>
-                        <td>{{ $property->description }}</td>
+                        {{-- <td>{{ $property->description }}</td> --}}
                         <td>{{ $property->address }}</td>
                         <td>{{ $property->city }}</td>
                         <td>{{ $property->price }}</td>

@@ -35,8 +35,10 @@
                         <td>{{ $property->status }}</td>
                         <td>{{ $property->created_at }}</td>
                         <td>{{ $property->updated_at }}</td>
-                        <td><a href="{{ env('BASE_URL') }}/properties/{{ $property->id }}" class="button">Ver detalles</a></td>
-
+                        <td class="buttons-wrapper">
+                            <a href="{{ env('BASE_URL') }}/properties/{{ $property->id }}" class="button">Ver detalles</a>
+                            <a href="" class="button">Editar</a>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>

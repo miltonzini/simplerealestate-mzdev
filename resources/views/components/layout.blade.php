@@ -16,7 +16,7 @@
             </div>
             <div class="second-block">
                 <!-- <a href="{{ route('home') }}" class="navbar-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a> -->
-                <a href="#" class="button login-button">Login</a>
+                <a href="{{ route('login') }}" class="button login-button">Login</a>
             </div>
         </nav>
     {{ $slot }}
