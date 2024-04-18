@@ -24,6 +24,7 @@ Route::view('/admin', 'admin.dashboard')->name('dashboard');
 Route::view('/admin/login', 'admin.login')->name('login');
 Route::get('/admin/properties', [AdminPropertiesController::class, 'index'])->name('admin-properties');
 
+
 // TEST ROUTES
 
 Route::get('/test/{string?}', function($string = 'default string'){
