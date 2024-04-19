@@ -1,11 +1,12 @@
 :root {
     --primary: #952d95;
-    --red: red;
+    --accent: #952d95;
+    --accent2: rgb(231, 91, 91);
+    --soft: #fefefe;
     --dark: #222;
     --dark2: #333;
     --gray: gray;
-    --accent: #952d95;
-    --accent2: #6ea05b;
+    --error: rgb(231, 91, 91);
 }
 
 /* Test classes */
@@ -217,4 +218,13 @@ td, th {
     border-radius: 5px;
     background-color: var(--dark2);
     color: var(--gray);
+}
+
+form small.error {
+    background: var(--error);
+    padding: 0.15rem 0.25rem;
+    margin-top: 0.25rem;
+    position: relative;
+    display: block;
+    border-radius: 0.25rem;
 }
