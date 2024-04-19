@@ -155,3 +155,63 @@ table .buttons-wrapper {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--dark2); 
 }
+
+
+
+
+
+/* Basic form styles*/
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--dark2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gray);
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    background-color: var(--dark);
+    color: white;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    background-color: var(--dark);
+    color: white;
+}
+
+.form-group button {
+    border: none;
+    color: white;
+}
+
+.form-group button:hover {
+    background-color: var(--accent2);
+}
+
+.form-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--dark2);
+    color: var(--gray);
+}
