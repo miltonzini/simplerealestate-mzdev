@@ -1,10 +1,11 @@
 :root {
+    --primary: #952d95;
     --red: red;
     --dark: #222;
     --dark2: #333;
     --gray: gray;
-    --accent: rgb(102, 3, 102);
-    --accent2: purple;
+    --accent: #952d95;
+    --accent2: #6ea05b;
 }
 
 /* Test classes */
@@ -22,9 +23,10 @@ button, .button {
     margin: 0.25 0.15rem;
     padding: 0.25rem 1rem;
     border-radius: 1rem;
-    background: var(--accent);
+    background: var(--primary);
     font-size: inherit;
     text-align: center;
+    transition: all 300ms ease;
 }
 .button-sm {
     font-size: 0.8rem;
@@ -79,7 +81,7 @@ p, a {
 }
 
 .navbar .navbar-link.active {
-    background: var(--accent2);
+    background: var(--accent);
     font-weight: bold;
 }
 .navbar .login-button {
@@ -103,9 +105,9 @@ td, th {
     width: 100%; 
     white-space: nowrap; 
 }
-table .buttons-wrapper {
+/* table .buttons-wrapper { */
     /*   ...   */
-}
+/* } */
 
 .dark-table {
     width: 100%;
@@ -200,6 +202,7 @@ table .buttons-wrapper {
 }
 
 .form-group button {
+    background: var(--primary);
     border: none;
     color: white;
 }
