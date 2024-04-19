@@ -4,18 +4,18 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\PropertiesController;
 use App\Http\Controllers\AdminPropertiesController;
+use App\Http\Controllers\ContactMessagesController;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
 Route::view('/about', 'about')->name('about');
-
 Route::view('/contact', 'contact')->name('contact');
-
 Route::get('/properties', [PropertiesController::class, 'index'])->name('properties');
-
 Route::get('/properties/{id}', [PropertyController::class, 'show'])->name('property');
+
+Route::post('/contact', [ContactMessagesController::class, 'store'])->name('contact');
 
 
 // ADMIN ROUTES
