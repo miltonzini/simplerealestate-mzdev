@@ -8,16 +8,16 @@
                 <br>
                 <thead>
                     <tr>
-                        <th>id</th>
-                        <th>title</th>
-                        <th>description</th>
-                        <th>address</th>
-                        <th>city</th>
-                        <th>price</th>
-                        <th>type</th>
-                        <th>status</th>
-                        <th>created_at</th>
-                        <th>updated_at</th>
+                        <th>{{__('id')}}</th>
+                        <th>{{__('title')}}</th>
+                        <th>{{__('Description')}}</th>
+                        <th>{{__('address')}}</th>
+                        <th>{{__('city')}}</th>
+                        <th>{{__('price')}}</th>
+                        <th>{{__('type')}}</th>
+                        <th>{{__('status')}}</th>
+                        <th>{{__('created_at')}}</th>
+                        <th>{{__('updated_at')}}</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -7,14 +7,14 @@
                 <caption>Listado de Propiedades</caption>
                 <thead>
                     <tr>
-                        <th>id</th>
-                        <th>title</th>
+                        <th>{{__('id')}}</th>
+                        <th>{{__('title')}}</th>
                         {{--<th>description</th>--}}
-                        <th>address</th>
-                        <th>city</th>
-                        <th>price</th>
-                        <th>type</th>
-                        <th>status</th>
+                        <th>{{__('address')}}</th>
+                        <th>{{__('city')}}</th>
+                        <th>{{__('price')}}</th>
+                        <th>{{__('type')}}</th>
+                        <th>{{__('status')}}</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -28,8 +28,7 @@
                         <td>{{ $property->price }}</td>
                         <td>{{ $property->type }}</td>
                         <td>{{ $property->status }}</td>
-                        <td><a href="{{ env('BASE_URL') }}/properties/{{ $property->id }}" class="button">Ver detalles</a></td>
-
+                        <td><a href="{{ env('BASE_URL') }}/properties/{{ $property->id }}" class="button">{{__('See Details')}}</a></td>
                     </tr>
                 @endforeach
                 </tbody>

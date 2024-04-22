@@ -5,5 +5,21 @@
     "Property": "Propiedad",
     "Properties": "Propiedades",
     "Contact": "Contacto",
-    "Login": "Iniciar Sesión"
+    "login": "Iniciar Sesión", 
+    "title": "Título",
+    "Description": "Descripción",
+    "address": "Dirección",
+    "city": "Ciudad",
+    "price": "Precio",
+    "type": "Tipo",
+    "status": "Estado",
+    "available": "Disponible",
+    "See Details": "Ver Detalles",
+    "Name": "Nombre",
+    "LastName": "Apellido",
+    "Age": "Edad",
+    "Subject": "Asunto",
+    "Email": "Correo Electrónico",
+    "Message": "Mensaje",
+    "Send": "Enviar"
 }

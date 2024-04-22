@@ -7,27 +7,27 @@
                 <form class="form-container" action="{{ route('contact') }}" method="POST">
                     @csrf
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" placeholder="Name" value="{{ old('name') }}">
+                        <label for="name">{{__('Name')}}</label>
+                        <input id="name" name="name" type="text" placeholder="{{__('Name')}}" value="{{ old('name') }}">
                         {!! $errors->first('name', '<small class="error">:message</small>') !!}                    
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input id="subject" name="subject" type="text" placeholder="Subject" value="{{ old('subject') }}">
+                        <label for="subject">{{__('Subject')}}</label>
+                        <input id="subject" name="subject" type="text" placeholder="{{__('Subject')}}" value="{{ old('subject') }}">
                         {!! $errors->first('subject', '<small class="error">:message</small>') !!}                    
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="Email" value="{{ old('email') }}">
+                        <label for="email">{{__('Email')}}</label>
+                        <input id="email" name="email" type="email" placeholder="{{__('Email')}}" value="{{ old('email') }}">
                         {!! $errors->first('email', '<small class="error">:message</small>') !!}
                     </div>
                     <div class="form-group">
-                        <label for="content">Message</label>
-                        <textarea id="content" name="content" placeholder="Message">{{ old('content') }}</textarea>
+                        <label for="content">{{__('Message')}}</label>
+                        <textarea id="content" name="content" placeholder="{{__('Message')}}">{{ old('content') }}</textarea>
                         {!! $errors->first('content', '<small class="error">:message</small>') !!}
                     </div>
                     <div class="form-group">
-                        <button type="submit">Send</button>
+                        <button type="submit">{{__('Send')}}</button>
                     </div>
                 </form>
             </div>
