@@ -1,6 +1,6 @@
 @section('title', 'Home')
 <x-layout>
-    <h1>Home</h1>
+    <h1>{{__('HomePage')}}</h1>
     <main>
         <section>
             <div class="container">

@@ -1,6 +1,6 @@
 @section('title', 'Properties')
 <x-layout>
-    <h1>Properties</h1>
+    <h1>{{__('Properties')}}</h1>
     <main>
         <div class="table-wrapper dark-table" role="region" tabindex="0">
             <table>

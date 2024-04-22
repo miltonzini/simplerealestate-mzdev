@@ -1,6 +1,6 @@
 @section('title', 'Property')
 <x-layout>
-    <h1>Propiedad {{ $property->id }}</h1>
+    <h1>{{__('Property')}} {{ $property->id }}</h1>
     <main>
             <div class="dark-table" role="region" tabindex="0">
                 <table>
