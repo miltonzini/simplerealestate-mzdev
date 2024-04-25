@@ -72,6 +72,21 @@ p, a {
     justify-content: space-between;
 }
 
+.navbar .block {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    column-gap: 0.5rem;
+}
+.navbar .block p,  .navbar .block a {
+    margin: 0;
+}
+.navbar .block p {
+    display: flex;
+    align-items: center;
+}
+
+
 .navbar .navbar-link {
     background: unset;
     margin: 0 0.15rem;

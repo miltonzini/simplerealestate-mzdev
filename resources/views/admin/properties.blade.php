@@ -1,5 +1,5 @@
 @section('title', 'Properties')
-<x-layout>
+<x-AdminLayout>
     <h1>Properties</h1>
     <main>
         <div class="table-wrapper dark-table" role="region" tabindex="0">
@@ -45,4 +45,4 @@
             </table>
         </div>
     </main>
-</x-layout>
+</x-AdminLayout>

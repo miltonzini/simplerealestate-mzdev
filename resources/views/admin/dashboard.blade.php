@@ -1,5 +1,5 @@
 @section('title', 'Dashboard')
-<x-layout>
+<x-AdminLayout>
     <h1>Admin Dashboard</h1>
     <main>
         <section>
@@ -8,4 +8,4 @@
             </div>
         </section>
     </main>
-</x-layout>
+</x-AdminLayout>
