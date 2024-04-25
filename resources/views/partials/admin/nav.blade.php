@@ -7,6 +7,6 @@
     </div>
     <div class="block second-block">
         <p>{{__('Full Name')}}</p>
-        <a href="{{ route('login') }}" class="button login-button">Logout</a>
+        <a href="{{ route('home') }}" class="button login-button">Logout</a>
     </div>
 </nav>
